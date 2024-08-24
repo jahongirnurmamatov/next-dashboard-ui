@@ -2,7 +2,7 @@
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
-import { parentsData, role, studentsData, subjectsData, teachersData } from "@/lib/data";
+import {  role, subjectsData } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 

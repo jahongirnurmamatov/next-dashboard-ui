@@ -2,7 +2,7 @@
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
-import { parentsData, role, studentsData, teachersData } from "@/lib/data";
+import { parentsData, role} from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -60,7 +60,7 @@ const ParentPageList = () => {
           <div className="flex items-center gap-2">
             <Link href={`/list/teachers/${item.id}`}>
               <button className="h-7 w-7 flex items-center justify-center rounded-full bg-lamaSky">
-                <Image alt="" src={"/view.png"} width={16} height={16} />
+                <Image alt="" src={"/edit.png"} width={16} height={16} />
               </button>
             </Link>
             {role === "admin" && (
