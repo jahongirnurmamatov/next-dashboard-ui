@@ -87,6 +87,7 @@
     margin: 10px !important;
     width:  99%;
     display: flex;
+    flex-direction: column;
 }
 .rbc-event-label{
     color:gray !important;
