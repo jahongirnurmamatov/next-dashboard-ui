@@ -1,8 +1,8 @@
-
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
-import { parentsData, role} from "@/lib/data";
+import { parentsData, role } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -11,7 +11,7 @@ type Parent = {
   students: string[];
   name: string;
   email?: string;
-  phone:string;
+  phone: string;
   address: string;
 };
 
@@ -58,15 +58,18 @@ const ParentPageList = () => {
         <td className="hidden md:table-cell">{item.address}</td>
         <td>
           <div className="flex items-center gap-2">
-            <Link href={`/list/teachers/${item.id}`}>
-              <button className="h-7 w-7 flex items-center justify-center rounded-full bg-lamaSky">
+            {/* <button className="h-7 w-7 flex items-center justify-center rounded-full bg-lamaSky">
                 <Image alt="" src={"/edit.png"} width={16} height={16} />
-              </button>
-            </Link>
+              </button> */}
+
             {role === "admin" && (
-              <button className="h-7 w-7 flex items-center justify-center rounded-full bg-lamaPurple">
-                <Image alt="" src={"/delete.png"} width={16} height={16} />
-              </button>
+              // <button className="h-7 w-7 flex items-center justify-center rounded-full bg-lamaPurple">
+              //   <Image alt="" src={"/delete.png"} width={16} height={16} />
+              // </button>
+              <>
+                <FormModal type="update" table="parent" />
+                <FormModal type="delete" table="parent" />
+              </>
             )}
           </div>
         </td>
@@ -88,9 +91,10 @@ const ParentPageList = () => {
               <Image alt="" src={"/sort.png"} width={14} height={14} />
             </button>
             {role === "admin" && (
-              <button className="w-8 flex h-8 items-center justify-center rounded-full bg-lamaYellow">
-                <Image alt="" src={"/plus.png"} width={14} height={14} />
-              </button>
+              // <button className="w-8 flex h-8 items-center justify-center rounded-full bg-lamaYellow">
+              //   <Image alt="" src={"/plus.png"} width={14} height={14} />
+              // </button>
+              <FormModal type="create" table="parent" />
             )}
           </div>
         </div>

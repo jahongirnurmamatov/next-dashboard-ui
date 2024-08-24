@@ -1,4 +1,4 @@
-
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
@@ -45,7 +45,8 @@ const AnnouncementListPage = () => {
         <div className="flex items-center gap-2">
           {role === "admin" && (
             <>
-              
+              <FormModal type="update" table="announcement" />
+              <FormModal type="delete" table="announcement" />
             </>
           )}
         </div>
@@ -70,7 +71,9 @@ const AnnouncementListPage = () => {
               <Image src="/sort.png" alt="" width={14} height={14} />
             </button>
             {role === "admin" && (
-             <></>
+              <>
+                <FormModal type="create" table="announcement" />
+              </>
             )}
           </div>
         </div>

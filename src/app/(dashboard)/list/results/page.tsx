@@ -1,9 +1,8 @@
-
-
+import FormModal from "@/components/FormModal";
 import Pagination from "@/components/Pagination";
 import Table from "@/components/Table";
 import TableSearch from "@/components/TableSearch";
-import {  assignmentsData, resultsData, role } from "@/lib/data";
+import { assignmentsData, resultsData, role } from "@/lib/data";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -13,9 +12,9 @@ type Result = {
   class: string;
   teacher: string;
   student: string;
-  type:'exam'|'assignment';
-  date:string;
-  score:number;
+  type: "exam" | "assignment";
+  date: string;
+  score: number;
 };
 
 const columns = [
@@ -66,16 +65,12 @@ const ResultListPage = () => {
         <td className="hidden md:table-cell">{item.class}</td>
         <td className="hidden md:table-cell">{item.date}</td>
         <td>
-          <div className="flex items-center gap-2">
-            <Link href={`/list/teachers/${item.id}`}>
-              <button className="h-7 w-7 flex items-center justify-center rounded-full bg-lamaSky">
-                <Image alt="" src={"/edit.png"} width={16} height={16} />
-              </button>
-            </Link>
-            {role === "admin" && (
-              <button className="h-7 w-7 flex items-center justify-center rounded-full bg-lamaPurple">
-                <Image alt="" src={"/delete.png"} width={16} height={16} />
-              </button>
+          <div className="flex items-center gap-2">      
+          {role === "admin" && (
+              <>
+                <FormModal type="update" table="result" />
+                <FormModal type="delete" table="result" />
+              </>
             )}
           </div>
         </td>
@@ -97,9 +92,7 @@ const ResultListPage = () => {
               <Image alt="" src={"/sort.png"} width={14} height={14} />
             </button>
             {role === "admin" && (
-              <button className="w-8 flex h-8 items-center justify-center rounded-full bg-lamaYellow">
-                <Image alt="" src={"/plus.png"} width={14} height={14} />
-              </button>
+              <FormModal type="create" table="result" />
             )}
           </div>
         </div>
@@ -112,4 +105,4 @@ const ResultListPage = () => {
   );
 };
 
-export default  ResultListPage;
+export default ResultListPage;
