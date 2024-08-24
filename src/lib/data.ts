@@ -1,6 +1,6 @@
 // TEMPORARY DATA
 
-export let role = "admin";
+export let role = "teacher";
 
 export const teachersData = [
   {
@@ -916,148 +916,121 @@ export const announcementsData = [
 ];
 
 
-// YOU SHOULD CHANGE THE DATES OF THE EVENTS TO THE CURRENT DATE TO SEE THE EVENTS ON THE CALENDAR
 export const calendarEvents = [
   {
     title: "Math",
     allDay: false,
-    start: new Date(2024, 7, 12, 8, 0),
-    end: new Date(2024, 7, 12, 8, 45),
+    start: new Date(2024, 7, 19, 8, 0), // August 19, 2024
+    end: new Date(2024, 7, 19, 8, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 12, 9, 0),
-    end: new Date(2024, 7, 12, 9, 45),
+    start: new Date(2024, 7, 19, 9, 0), // August 19, 2024
+    end: new Date(2024, 7, 19, 9, 45),
   },
   {
     title: "Biology",
     allDay: false,
-    start: new Date(2024, 7, 12, 10, 0),
-    end: new Date(2024, 7, 12, 10, 45),
+    start: new Date(2024, 7, 20, 10, 0), // August 20, 2024
+    end: new Date(2024, 7, 20, 10, 45),
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 12, 11, 0),
-    end: new Date(2024, 7, 12, 11, 45),
+    start: new Date(2024, 7, 21, 11, 0), // August 21, 2024
+    end: new Date(2024, 7, 21, 11, 45),
   },
   {
     title: "Chemistry",
     allDay: false,
-    start: new Date(2024, 7, 12, 13, 0),
-    end: new Date(2024, 7, 12, 13, 45),
+    start: new Date(2024, 7, 22, 13, 0), // August 22, 2024
+    end: new Date(2024, 7, 22, 13, 45),
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 12, 14, 0),
-    end: new Date(2024, 7, 12, 14, 45),
+    start: new Date(2024, 7, 23, 14, 0), // August 23, 2024
+    end: new Date(2024, 7, 23, 14, 45),
   },
   {
     title: "English",
     allDay: false,
-    start: new Date(2024, 7, 13, 9, 0),
-    end: new Date(2024, 7, 13, 9, 45),
-  },
-  {
-    title: "Biology",
-    allDay: false,
-    start: new Date(2024, 7, 13, 10, 0),
-    end: new Date(2024, 7, 13, 10, 45),
+    start: new Date(2024, 7, 22, 9, 0), // August 22, 2024
+    end: new Date(2024, 7, 22, 9, 45),
   },
   {
     title: "Physics",
     allDay: false,
-    start: new Date(2024, 7, 13, 11, 0),
-    end: new Date(2024, 7, 13, 11, 45),
-  },
-
-  {
-    title: "History",
-    allDay: false,
-    start: new Date(2024, 7, 13, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
-  },
-  {
-    title: "Math",
-    allDay: false,
-    start: new Date(2024, 7, 14, 8, 0),
-    end: new Date(2024, 7, 14, 8, 45),
-  },
-  {
-    title: "Biology",
-    allDay: false,
-    start: new Date(2024, 7, 14, 10, 0),
-    end: new Date(2024, 7, 14, 10, 45),
-  },
-
-  {
-    title: "Chemistry",
-    allDay: false,
-    start: new Date(2024, 7, 14, 13, 0),
-    end: new Date(2024, 7, 14, 13, 45),
+    start: new Date(2024, 7, 20, 11, 0), // August 20, 2024
+    end: new Date(2024, 7, 20, 11, 45),
   },
   {
     title: "History",
     allDay: false,
-    start: new Date(2024, 7, 14, 14, 0),
-    end: new Date(2024, 7, 13, 14, 45),
-  },
-  {
-    title: "English",
-    allDay: false,
-    start: new Date(2024, 7, 15, 9, 0),
-    end: new Date(2024, 7, 15, 9, 45),
-  },
-  {
-    title: "Biology",
-    allDay: false,
-    start: new Date(2024, 7, 15, 10, 0),
-    end: new Date(2024, 7, 15, 10, 45),
-  },
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2024, 7, 15, 11, 0),
-    end: new Date(2024, 7, 15, 11, 45),
+    start: new Date(2024, 7, 19, 14, 0), // August 19, 2024
+    end: new Date(2024, 7, 19, 14, 45),
   },
 
+  // Additional 10 classes
   {
-    title: "History",
+    title: "Computer Science",
     allDay: false,
-    start: new Date(2024, 7, 15, 14, 0),
-    end: new Date(2024, 7, 15, 14, 45),
+    start: new Date(2024, 7, 21, 15, 0), // August 21, 2024
+    end: new Date(2024, 7, 21, 15, 45),
   },
   {
-    title: "Math",
+    title: "Geography",
     allDay: false,
-    start: new Date(2024, 7, 16, 8, 0),
-    end: new Date(2024, 7, 16, 8, 45),
+    start: new Date(2024, 7, 22, 11, 0), // August 22, 2024
+    end: new Date(2024, 7, 22, 11, 45),
   },
   {
-    title: "English",
+    title: "Art",
     allDay: false,
-    start: new Date(2024, 7, 16, 9, 0),
-    end: new Date(2024, 7, 16, 9, 45),
-  },
-
-  {
-    title: "Physics",
-    allDay: false,
-    start: new Date(2024, 7, 16, 11, 0),
-    end: new Date(2024, 7, 16, 11, 45),
+    start: new Date(2024, 7, 23, 10, 0), // August 23, 2024
+    end: new Date(2024, 7, 23, 10, 45),
   },
   {
-    title: "Chemistry",
+    title: "Physical Education",
     allDay: false,
-    start: new Date(2024, 7, 16, 13, 0),
-    end: new Date(2024, 7, 16, 13, 45),
+    start: new Date(2024, 7, 19, 12, 0), // August 19, 2024
+    end: new Date(2024, 7, 19, 12, 45),
   },
   {
-    title: "History",
+    title: "Music",
     allDay: false,
-    start: new Date(2024, 7, 16, 14, 0),
-    end: new Date(2024, 7, 16, 14, 45),
+    start: new Date(2024, 7, 20, 14, 0), // August 20, 2024
+    end: new Date(2024, 7, 20, 14, 45),
+  },
+  {
+    title: "Drama",
+    allDay: false,
+    start: new Date(2024, 7, 24, 9, 0), // August 21, 2024
+    end: new Date(2024, 7, 24, 9, 45),
+  },
+  {
+    title: "French",
+    allDay: false,
+    start: new Date(2024, 7, 22, 14, 0), // August 22, 2024
+    end: new Date(2024, 7, 22, 14, 45),
+  },
+  {
+    title: "Spanish",
+    allDay: false,
+    start: new Date(2024, 7, 24, 8, 0), // August 23, 2024
+    end: new Date(2024, 7, 24, 8, 45),
+  },
+  {
+    title: "Economics",
+    allDay: false,
+    start: new Date(2024, 7, 24, 15, 0), // August 19, 2024
+    end: new Date(2024, 7, 24, 15, 45),
+  },
+  {
+    title: "Philosophy",
+    allDay: false,
+    start: new Date(2024, 7, 20, 13, 0), // August 20, 2024
+    end: new Date(2024, 7, 20, 13, 45),
   },
 ];
