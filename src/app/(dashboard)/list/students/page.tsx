@@ -74,7 +74,7 @@ const StudentPageList = () => {
         <td className="hidden md:table-cell">{item.address}</td>
         <td>
           <div className="flex items-center gap-2">
-            <Link href={`/list/teachers/${item.id}`}>
+            <Link href={`/list/students/${item.id}`}>
               <button className="h-7 w-7 flex items-center justify-center rounded-full bg-lamaSky">
                 <Image alt="" src={"/view.png"} width={16} height={16} />
               </button>
